@@ -3,10 +3,12 @@ Bug Tracker — Full Stack Microservices Application
 A full-stack Bug Tracking System migrated from a monolithic architecture to Spring Boot Microservices, with an Angular frontend and centralized API Gateway authentication.
 
 Architecture
+------------
 
 Angular Frontend → API Gateway → Eureka Service Discovery → Microservices
 
 Microservices
+-------------
 
 | Service | Responsibility | Port |
 |---|---|---|
@@ -19,6 +21,7 @@ Microservices
 | Dashboard Service | Role-based dashboard aggregation | 8085 |
 
 Tech Stack
+-----------
 
 Frontend
 - Angular
@@ -39,6 +42,7 @@ Backend
 
 Database
 - MySQL / H2 
+
 Tools
 - Git
 - GitHub
@@ -47,6 +51,7 @@ Tools
 - VS Code / Spring Tool Suite
 
 Key Features
+------------
 
 - JWT-based authentication
 - Centralized API Gateway
@@ -63,12 +68,14 @@ Key Features
 - Database-per-service architecture
 
 Dashboard
+----------
 
 The Dashboard Service aggregates statistics from User, Project, and Bug services while preserving role-specific dashboard behaviour.
 
 Project Structure
+-----------------
 
-```text
+
 frontend/
 backend/
   eureka-server/
@@ -78,10 +85,10 @@ backend/
   bug-service/
   notification-service/
   dashboard-service/
-docs/
-```
+
 
 Running the Application
+-----------------------
 
 1. Configure database connections and environment variables.
 2. Start Eureka Server.
@@ -93,11 +100,13 @@ Running the Application
 Refer to the individual service configuration files for actual requirements.
 
 Security
+--------
 
 Do not commit JWT secrets, passwords, API keys, or production credentials.
 
 Author
+-------
 
 Nandhini P
 
-GitHub: https://github.com/YOUR_USERNAME
+GitHub: https://github.com/BoomikaNandhini/bug-tracker-microservices/
